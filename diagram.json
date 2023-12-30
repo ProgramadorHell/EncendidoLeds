@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Nelson Molina Aguiar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0.6, "left": -0.6, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -92.05,
+      "left": 86.4,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": -90, "left": 109.4, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "r1:1", "uno:13", "green", [ "v67.2", "h38.4" ] ],
+    [ "led1:A", "r1:2", "green", [ "v-9.6", "h38.4" ] ],
+    [ "led1:C", "uno:GND.1", "black", [ "v19.2", "h-8.9" ] ]
+  ],
+  "dependencies": {}
+}
